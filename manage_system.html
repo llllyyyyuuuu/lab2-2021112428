@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>题库管理系统</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            text-align: center;
+            padding: 8px;
+        }
+        th{
+            background-color: #ddd;
+        }
+        button{
+            margin-left: 5px;
+        }
+    </style>
+    <script src="./javascript_file/manage_system.js"></script>
+</head>
+<body>
+    <h1 style="text-align: center;">
+        题库管理系统
+    </h1>
+    <button onclick="addRow()">新增数据</button>
+    <table id="table">
+        <tr>
+            <th>序号</th>
+            <th>题目</th>
+            <th>题目类型</th>
+            <th>答案</th>
+            <th>操作</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1+1=？</td>
+            <td>填空</td>
+            <td>2</td>
+            <td>
+                <button onclick="editRow(this)">编辑</button>
+                <button onclick="deleteRow(this)">删除</button>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
